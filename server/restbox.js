@@ -4,7 +4,7 @@ const path = require('path');
 const {
     promisify,
 } = require('util');
-const {createGzip} = require('zlib');
+const {createGunzip} = require('zlib');
 const {parse} = require('querystring');
 const {
     getQuery,
@@ -15,11 +15,9 @@ const {
 
 const {Router} = require('express');
 const currify = require('currify');
-const wraptile = require('wraptile');
 const readbox = require('readbox');
 const pullout = promisify(require('pullout'));
 const pipe = promisify(require('pipe-io'));
-const tryToCatch = require('try-to-catch');
 const {
     remove,
     mkdir,
@@ -82,10 +80,14 @@ const onPut = async ({token, prefix}, req, res) => {
     const name = getPathName(url);
     const query = getQuery(req);
     
-    console.log(name);
-    
     if (query !== 'dir') {
-        await pipe([req, createWriteStream(token, name)]);
+        const streams = [
+            req,
+            query === 'unzip' && createGunzip(),
+            createWriteStream(token, name),
+        ].filter(Boolean);
+        
+        await pipe(streams);
         
         const msg = format(name, 'save');
         sendOK(name, msg, req, res);
