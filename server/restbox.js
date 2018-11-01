@@ -91,6 +91,7 @@ const onPut = async ({token, prefix}, req, res) => {
         
         const msg = format(name, 'save');
         sendOK(name, msg, req, res);
+        return;
     }
     
     await mkdir(token, name);
