@@ -1,0 +1,76 @@
+{
+  "name": "restbox",
+  "version": "1.0.0",
+  "description": "REST for CRUD file operations on dropbox",
+  "main": "server/restbox.js",
+  "engines": {
+    "node": ">=8"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "scripts": {
+    "test": "tape 'test/*.js'",
+    "report": "nyc report --reporter=text-lcov | coveralls",
+    "coverage": "nyc npm test",
+    "watch:test": "npm run watcher -- npm test",
+    "watch:lint": "npm run watcher -- 'npm run lint'",
+    "watcher": "nodemon -w test -w server --exec",
+    "compile:client": "babel client -d legacy/client",
+    "build": "redrun clean legacy:* compile:*",
+    "wisdom": "npm run build compile:*",
+    "lint": "redrun lint:*",
+    "lint:client": "eslint --env browser client",
+    "lint:server": "eslint server test",
+    "clean": "rimraf dist* legacy",
+    "legacy:dir": "mkdirp legacy/client",
+    "legacy:index": "echo \"module.exports = require('./restafary')\" > legacy/client/index.js"
+  },
+  "dependencies": {
+    "@cloudcmd/dropbox": "^4.0.0",
+    "jonny": "^2.0.3",
+    "ponse": "^3.0.1",
+    "pullout": "^2.0.0",
+    "readbox": "^2.0.0",
+    "wraptile": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "coveralls": "^3.0.0",
+    "eslint": "^5.0.0",
+    "eslint-plugin-node": "^8.0.0",
+    "express": "^4.13.4",
+    "mkdirp": "^0.5.1",
+    "nodemon": "^1.11.0",
+    "nyc": "^13.0.1",
+    "pipe": "^1.1.0",
+    "redrun": "^7.0.0",
+    "request": "^2.79.0",
+    "sinon": "^7.0.0",
+    "sinon-called-with-diff": "^2.0.0",
+    "tape": "^4.5.1",
+    "try-to-catch": "^1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coderaiser/node-restafary.git"
+  },
+  "keywords": [
+    "rest",
+    "crud",
+    "files",
+    "middleware",
+    "dropbox"
+  ],
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderaiser/node-restafary/issues"
+  },
+  "homepage": "https://github.com/coderaiser/node-restafary"
+}
