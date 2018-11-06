@@ -23,13 +23,13 @@
     "ponse": "^3.0.1",
     "pullout": "^2.0.0",
     "readbox": "^2.0.0",
+    "router": "^2.0.0-alpha.1",
     "wraptile": "^2.0.0"
   },
   "devDependencies": {
     "coveralls": "^3.0.0",
     "eslint": "^5.0.0",
     "eslint-plugin-node": "^8.0.0",
-    "express": "^4.13.4",
     "fullstore": "^1.1.0",
     "mock-require": "^3.0.2",
     "nodemon": "^1.11.0",

@@ -1,14 +1,14 @@
 'use strict';
 
-const {Router} = require('express');
+const Router = require('router');
 const currify = require('currify');
 const log = require('debug')('restbox');
 
-const onCopy = require('./rest/copy');
-const onMove = require('./rest/move');
-const onGet = require('./rest/get');
-const onPut = require('./rest/put');
-const onDelete = require('./rest/delete');
+const onCopy = currify(require('./rest/copy'));
+const onMove = currify(require('./rest/move'));
+const onGet = currify(require('./rest/get'));
+const onPut = currify(require('./rest/put'));
+const onDelete = currify(require('./rest/delete'));
 
 const cut = currify((prefix, req, res, next) => {
     req.url = req.url.replace(prefix, '');
@@ -29,29 +29,27 @@ module.exports = (options = {}) => {
     
     router.route(`${prefixFS}/*`)
         .all(cut(prefixFS))
-        .get(ewrap(onGet, {token}))
-        .put(ewrap(onPut, {token}))
-        .delete(ewrap(onDelete, {token}));
+        .get(onGet({token}))
+        .put(onPut({token}))
+        .delete(onDelete({token}))
+        .all(onError);
     
     router.route(prefixCP)
         .all(cut(prefixCP))
-        .put(ewrap(onCopy, {token}))
+        .put(onCopy({token}))
+        .all(onError);
     
     router.route(prefixMV)
         .all(cut(prefixMV))
-        .put(ewrap(onMove, {token}))
+        .put(onMove({token}))
+        .all(onError);
     
     return router;
 };
 
-const ewrap = currify((promise, options, req, res) => {
-    promise(options, req, res)
-        .catch(sendError(res));
-});
-
-const sendError = currify((res, e) => {
+const onError = (e, req, res, next) => {
     log(e);
     res.statusCode = 404;
     res.end(e.message);
-});
+};
 
