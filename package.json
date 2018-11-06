@@ -7,7 +7,7 @@
     "node": ">=8"
   },
   "scripts": {
-    "test": "tape 'test/*.js'",
+    "test": "tape 'server/**/*.spec.js'",
     "report": "nyc report --reporter=text-lcov | coveralls",
     "coverage": "nyc npm test",
     "watch:test": "npm run watcher -- npm test",
@@ -15,10 +15,12 @@
     "watcher": "nodemon -w test -w server --exec",
     "compile:client": "babel client -d legacy/client",
     "lint": "redrun lint:*",
-    "lint:server": "eslint server test"
+    "lint:server": "eslint server"
   },
   "dependencies": {
     "@cloudcmd/dropbox": "^4.0.0",
+    "apart": "^2.0.1",
+    "ashify": "^1.0.2",
     "ponse": "^3.0.1",
     "pullout": "^2.0.0",
     "readbox": "^2.0.0",
@@ -29,12 +31,14 @@
     "eslint": "^5.0.0",
     "eslint-plugin-node": "^8.0.0",
     "express": "^4.13.4",
+    "mock-require": "^3.0.2",
     "nodemon": "^1.11.0",
     "nyc": "^13.0.1",
     "redrun": "^7.0.0",
     "request": "^2.79.0",
     "sinon": "^7.0.0",
-    "sinon-called-with-diff": "^2.0.0",
+    "sinon-called-with-diff": "^3.0.0",
+    "string-to-stream": "^1.1.1",
     "tape": "^4.5.1",
     "try-to-catch": "^1.0.2"
   },
