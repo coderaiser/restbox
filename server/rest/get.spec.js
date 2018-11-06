@@ -15,14 +15,14 @@ const {request} = require('serve-once')(restbox);
 const pathGet = './get';
 const pathRestbox = '../restbox';
 
-test('restbox: no token', async (t) => {
+test('restbox: get: no token', async (t) => {
     const {body} = await request.get('/dropbox/fs/');
     
     t.equal(body, 'token should be a string!', 'should return error message');
     t.end();
 });
 
-test('restbox: readbox', async (t) => {
+test('restbox: get: readbox', async (t) => {
     const readbox = sinon
         .stub()
         .returns(stringToStream('hello'));
@@ -47,7 +47,7 @@ test('restbox: readbox', async (t) => {
     t.end();
 });
 
-test('restbox: readbox: directory', async (t) => {
+test('restbox: get: readbox: directory', async (t) => {
     const readbox = sinon
         .stub()
         .returns({
@@ -85,14 +85,14 @@ test('restbox: readbox: directory', async (t) => {
     t.end();
 });
 
-test('restbox: readbox: size', async (t) => {
+test('restbox: get: readbox: size', async (t) => {
     const {body} = await request.get('/dropbox/fs/?size');
     
     t.equal(body, '0b', 'should equal');
     t.end();
 });
 
-test('restbox: readbox: hash', async (t) => {
+test('restbox: get: readbox: hash', async (t) => {
     const {random} = Math;
     
     Math.random = sinon
