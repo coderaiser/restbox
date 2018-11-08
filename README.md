@@ -1,4 +1,4 @@
-# Restbox [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
+# Restbox [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage][CoverageIMGURL]][CoverageURL]
 
 **REST** for **CRUD** file operations on `dropbox`.
 
@@ -48,7 +48,7 @@ const ip = '0.0.0.0';
 app.use(restbox({
     token: 'your dropbox token',
     prefix: '/dropbox',  // default
-    root: '/',           // default, coud be string or function
+    root: '/',           // default, can be string or function
 }));
 
 app.use(express.static(__dirname));
@@ -68,4 +68,7 @@ MIT
 [BuildStatusURL]:           https://travis-ci.org/coderaiser/restbox  "Build Status"
 [DependencyStatusURL]:      https://david-dm.org/coderaiser/restbox "Dependency Status"
 [LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
+
+[CoverageURL]:              https://coveralls.io/github/coderaiser/try-to-tape?branch=master
+[CoverageIMGURL]:           https://coveralls.io/repos/coderaiser/try-to-tape/badge.svg?branch=master&service=github
 

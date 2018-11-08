@@ -99,7 +99,8 @@ test('restbox: get: readbox: hash', async (t) => {
         .stub()
         .returns(31337);
     
-    const {body} = await request.get('/dropbox/fs/?hash');
+    const res = await request.get('/dropbox/fs/?hash');
+    const {body} = res;
     
     Math.random = random;
     

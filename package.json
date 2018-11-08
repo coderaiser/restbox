@@ -42,7 +42,8 @@
     "string-to-stream": "^1.1.1",
     "tape": "^4.5.1",
     "through2": "^3.0.0",
-    "try-to-catch": "^1.0.2"
+    "try-to-catch": "^1.0.2",
+    "try-to-tape": "^1.0.0"
   },
   "repository": {
     "type": "git",
