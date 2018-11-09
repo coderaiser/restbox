@@ -3,7 +3,9 @@
 const {createGunzip} = require('zlib');
 const {promisify} = require('util');
 
+const tryToCatch = require('try-to-catch');
 const pipe = promisify(require('pipe-io'));
+
 const {
     getPathName,
     getQuery,
@@ -26,13 +28,11 @@ module.exports = async ({token}, req, res) => {
     const query = getQuery(req);
     
     if (query !== 'dir') {
-        const streams = [
+        await putFile(token, {
+            name,
             req,
-            query === 'unzip' && createGunzip(),
-            createWriteStream(token, name),
-        ].filter(Boolean);
-        
-        await pipe(streams);
+            query,
+        });
         
         const msg = format(name, 'save');
         return sendOK(msg, req, res);
@@ -43,4 +43,22 @@ module.exports = async ({token}, req, res) => {
     const msg = format(name, 'make dir');
     sendOK(msg, req, res);
 };
+
+async function putFile(token, {name, query, req}) {
+    const writeStream = createWriteStream(token, name);
+    
+    const streams = [
+        req,
+        query === 'unzip' && createGunzip(),
+        writeStream,
+    ].filter(Boolean);
+    
+    await pipe(streams);
+    await confirmEndWriting(writeStream);
+}
+
+async function confirmEndWriting(writeStream) {
+    const on = promisify(writeStream.on.bind(writeStream));
+    await tryToCatch(on, 'metadata');
+}
 

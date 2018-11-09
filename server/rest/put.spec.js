@@ -68,6 +68,10 @@ test('restbox: put: response', async (t) => {
         token,
     };
     
+    stream.on('finish', () => {
+        setTimeout(() => stream.emit('metadata'), 0);
+    });
+    
     const {body} = await request.put('/dropbox/fs/hi.txt', {
         body: 'hello',
         options,
@@ -91,6 +95,10 @@ test('restbox: put: createWriteStream', async (t) => {
     const restbox = reRequire(pathRestbox);
     
     const {request} = reRequire('serve-once')(restbox);
+    
+    stream.on('finish', () => {
+        setTimeout(() => stream.emit('metadata'), 0);
+    });
     
     const token = 'hello'
     const options = {
