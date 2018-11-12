@@ -2,18 +2,17 @@
   "name": "restbox",
   "version": "1.0.3",
   "description": "REST for CRUD file operations on dropbox",
-  "main": "server/restbox.js",
+  "main": "lib/restbox.js",
   "scripts": {
-    "test": "tape 'server/**/*.spec.js'",
+    "test": "tape 'lib/**/*.spec.js'",
     "report": "nyc report --reporter=text-lcov | coveralls",
     "coverage": "nyc npm test",
     "watch:test": "npm run watcher -- npm test",
     "watch:lint": "npm run watcher -- 'npm run lint'",
-    "watcher": "nodemon -w test -w server --exec",
-    "compile:client": "babel client -d legacy/client",
+    "watcher": "nodemon -w test -w lib --exec",
     "lint": "redrun lint:*",
-    "lint:server": "eslint --quiet server/**/*.js --ignore-pattern **/.spec.js",
-    "lint:test": "eslint -c .eslintrc.test server/**/*.spec.js --no-ignore"
+    "lint:server": "eslint --quiet lib/**/*.js --ignore-pattern **/.spec.js",
+    "lint:test": "eslint -c .eslintrc.test lib/**/*.spec.js --no-ignore"
   },
   "dependencies": {
     "@cloudcmd/dropbox": "^4.0.0",
