@@ -20,7 +20,7 @@
     "ashify": "^1.0.2",
     "pipe-io": "^3.0.9",
     "ponse": "^3.0.1",
-    "pullout": "^2.0.0",
+    "pullout": "^3.0.0",
     "readbox": "^2.0.0",
     "router": "^2.0.0-alpha.1",
     "try-to-catch": "^1.1.1",
