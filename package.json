@@ -27,6 +27,7 @@
     "wraptile": "^2.0.0"
   },
   "devDependencies": {
+    "@cloudcmd/stub": "^2.0.0",
     "coveralls": "^3.0.0",
     "eslint": "^5.0.0",
     "eslint-plugin-node": "^8.0.0",
@@ -37,8 +38,6 @@
     "redrun": "^7.0.0",
     "request": "^2.79.0",
     "serve-once": "^1.0.0",
-    "sinon": "^7.0.0",
-    "sinon-called-with-diff": "^3.0.0",
     "string-to-stream": "^1.1.1",
     "tape": "^4.5.1",
     "through2": "^3.0.0",
