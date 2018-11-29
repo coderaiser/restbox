@@ -63,5 +63,8 @@
   "homepage": "https://github.com/coderaiser/restbox",
   "engines": {
     "node": ">=8.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
