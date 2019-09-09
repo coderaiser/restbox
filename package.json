@@ -25,7 +25,7 @@
     "readbox": "^2.0.0",
     "router": "^2.0.0-alpha.1",
     "try-to-catch": "^1.1.1",
-    "wraptile": "^2.0.0"
+    "wraptile": "^3.0.0"
   },
   "devDependencies": {
     "@cloudcmd/stub": "^2.0.0",
