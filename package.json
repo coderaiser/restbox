@@ -16,7 +16,7 @@
   "dependencies": {
     "@cloudcmd/dropbox": "^4.0.0",
     "apart": "^2.0.1",
-    "ashify": "^1.0.2",
+    "ashify": "^2.0.0",
     "currify": "^3.0.0",
     "debug": "^4.1.0",
     "pipe-io": "^3.0.9",
