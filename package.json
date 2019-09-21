@@ -13,6 +13,11 @@
     "lint": "madrun lint",
     "fix:lint": "madrun fix:lint"
   },
+  "nyc": {
+    "exclude": [
+      "**/*.spec.js"
+    ]
+  },
   "dependencies": {
     "@cloudcmd/dropbox": "^4.0.0",
     "apart": "^2.0.1",
@@ -64,7 +69,7 @@
   },
   "homepage": "https://github.com/coderaiser/restbox",
   "engines": {
-    "node": ">=8.3"
+    "node": ">=10"
   },
   "publishConfig": {
     "access": "public"
