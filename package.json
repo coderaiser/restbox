@@ -24,7 +24,7 @@
     "currify": "^4.0.0",
     "debug": "^4.1.0",
     "pipe-io": "^4.0.0",
-    "ponse": "^4.0.0",
+    "ponse": "^5.0.0",
     "pullout": "^4.0.0",
     "readbox": "^2.0.0",
     "router": "^2.0.0-alpha.1",
