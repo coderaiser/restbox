@@ -15,7 +15,8 @@
   },
   "nyc": {
     "exclude": [
-      "**/*.spec.js"
+      "**/*.spec.js",
+      ".*.js"
     ]
   },
   "dependencies": {
