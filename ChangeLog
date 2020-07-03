@@ -1,3 +1,19 @@
+2020.07.03, v2.0.5
+
+fix:
+- (restbox) delete: sendOK: write after end
+
+feature:
+- (package) through2 v4.0.2
+- (package) supertape v2.0.1
+- (package) putout v9.1.0
+- (package) madrun v7.0.0
+- (package) fullstore v3.0.0
+- (package) eslint-plugin-putout v5.0.1
+- (package) eslint v7.3.1
+- (package) @cloudcmd/stub v3.1.0
+
+
 2020.02.26, v2.0.4
 
 feature:
