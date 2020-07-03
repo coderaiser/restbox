@@ -32,7 +32,7 @@
     "wraptile": "^3.0.0"
   },
   "devDependencies": {
-    "@cloudcmd/stub": "^2.0.0",
+    "@cloudcmd/stub": "^3.1.0",
     "@iocmd/wait": "^1.0.0",
     "coveralls": "^3.0.0",
     "eslint": "^6.3.0",
