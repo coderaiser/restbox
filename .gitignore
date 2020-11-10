@@ -9,5 +9,5 @@ legacy
 
 .nyc_output
 *.swp
-
+.putoutcache
 
