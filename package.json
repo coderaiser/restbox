@@ -45,7 +45,7 @@
     "node-fetch": "^2.6.0",
     "nodemon": "^2.0.2",
     "nyc": "^15.0.0",
-    "putout": "^11.0.5",
+    "putout": "^13.9.1",
     "request": "^2.79.0",
     "serve-once": "^2.0.0",
     "string-to-stream": "^3.0.1",
