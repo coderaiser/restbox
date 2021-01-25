@@ -1,3 +1,15 @@
+2021.01.25, v3.0.0
+
+feature:
+- (restbox) drop support of node < 14
+- (package) ponse v6.0.0
+- (package) supertape v4.8.1
+- (package) putout v13.9.1
+- (package) madrun v8.6.2
+- (package) eslint-plugin-putout v6.0.1
+- (package) putout v11.0.5
+
+
 2020.07.03, v2.0.5
 
 fix:
