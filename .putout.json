@@ -2,7 +2,7 @@
     "match": {
         "lib/restbox.js": {
             "remove-unused-variables": ["on", {
-                "exclude":[
+                "exclude": [
                     "const onError = __",
                     "const log = __"
                 ]
