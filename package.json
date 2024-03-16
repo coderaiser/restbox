@@ -22,7 +22,7 @@
     "pipe-io": "^4.0.0",
     "ponse": "^7.0.0",
     "pullout": "^5.0.1",
-    "readbox": "^2.0.0",
+    "readbox": "^3.0.0",
     "router": "^2.0.0-alpha.1",
     "try-to-catch": "^3.0.0",
     "wraptile": "^3.0.0"
