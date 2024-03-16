@@ -28,7 +28,7 @@
     "wraptile": "^3.0.0"
   },
   "devDependencies": {
-    "@iocmd/wait": "^1.0.0",
+    "@iocmd/wait": "^2.1.0",
     "eslint": "^8.57.0",
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-node": "^11.0.0",
