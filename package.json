@@ -37,7 +37,7 @@
     "madrun": "^10.0.1",
     "mock-require": "^3.0.2",
     "node-fetch": "^2.6.0",
-    "nodemon": "^2.0.2",
+    "nodemon": "^3.1.0",
     "putout": "^35.7.5",
     "request": "^2.79.0",
     "serve-once": "^3.0.2",
