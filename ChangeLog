@@ -1,3 +1,22 @@
+2024.03.16, v4.0.0
+
+feature:
+- ba89fa7 restbox: @types/node-fetch v2.6.11
+- 52a7e13 restbox: @types/node-fetch v2.6.11
+- 85f3156 restbox: ponse v7.0.0
+- 94cc779 restbox: nodemon v3.1.0
+- 0f5326f restbox: @iocmd/wait v2.1.0
+- e712a2f restbox: @cloudcmd/dropbox v5.0.1
+- b125d15 restbox: supertape v10.4.0
+- d891be9 restbox: pullout v5.0.1
+- 0d17c2f restbox: drop support of node < 18
+- 07290e3 restbox: serve-once v3.0.2
+- 7e6a451 restbox: eslint-plugin-n v16.6.2
+- 9918778 restbox: eslint v8.57.0
+- ef3000a restbox: eslint-plugin-putout v22.4.1
+- bc398e6 restbox: madrun v10.0.1
+- 24f410b restbox: putout v35.7.5
+
 2021.01.25, v3.0.0
 
 feature:
