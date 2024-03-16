@@ -1,6 +1,7 @@
 {
   "name": "restbox",
   "version": "3.0.0",
+  "type": "commonjs",
   "description": "REST for CRUD file operations on dropbox",
   "main": "lib/restbox.js",
   "scripts": {
@@ -41,7 +42,7 @@
     "request": "^2.79.0",
     "serve-once": "^3.0.2",
     "string-to-stream": "^3.0.1",
-    "supertape": "^4.8.1",
+    "supertape": "^10.4.0",
     "through2": "^4.0.2"
   },
   "repository": {
