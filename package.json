@@ -34,7 +34,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-putout": "^6.0.1",
     "fullstore": "^3.0.0",
-    "madrun": "^8.6.2",
+    "madrun": "^10.0.1",
     "mock-require": "^3.0.2",
     "node-fetch": "^2.6.0",
     "nodemon": "^2.0.2",
