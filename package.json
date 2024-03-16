@@ -15,7 +15,7 @@
     "fix:lint": "madrun fix:lint"
   },
   "dependencies": {
-    "@cloudcmd/dropbox": "^4.0.0",
+    "@cloudcmd/dropbox": "^5.0.1",
     "apart": "^2.0.1",
     "currify": "^4.0.0",
     "debug": "^4.1.0",
