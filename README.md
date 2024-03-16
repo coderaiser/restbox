@@ -1,5 +1,14 @@
 # Restbox [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage][CoverageIMGURL]][CoverageURL]
 
+[NPMIMGURL]: https://img.shields.io/npm/v/restbox.svg?style=flat
+[LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
+[NPMURL]: https://npmjs.org/package/restbox "npm"
+[LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
+[BuildStatusURL]: https://github.com/coderaiser/restbox//actions?query=workflow%3A%22Node+CI%22 "Build Status"
+[BuildStatusIMGURL]: https://github.com/coderaiser/restbox/workflows/Node%20CI/badge.svg
+[CoverageURL]: https://coveralls.io/github/coderaiser/restbox?branch=master
+[CoverageIMGURL]: https://coveralls.io/repos/coderaiser/restbox/badge.svg?branch=master&service=github
+
 **REST** for **CRUD** file operations on `dropbox`.
 
 ## What is it?
@@ -47,8 +56,8 @@ const ip = '0.0.0.0';
 
 app.use(restbox({
     token: 'your dropbox token',
-    prefix: '/dropbox',  // default
-    root: '/',           // default, can be string or function
+    prefix: '/dropbox', // default
+    root: '/', // default, can be string or function
 }));
 
 app.use(express.static(__dirname));
@@ -59,16 +68,3 @@ server.listen(port, ip);
 ## License
 
 MIT
-
-[NPMIMGURL]:                https://img.shields.io/npm/v/restbox.svg?style=flat
-[BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/restbox/master.svg?style=flat
-[DependencyStatusIMGURL]:   https://img.shields.io/david/coderaiser/restbox.svg?style=flat
-[LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
-[NPMURL]:                   https://npmjs.org/package/restbox "npm"
-[BuildStatusURL]:           https://travis-ci.org/coderaiser/restbox  "Build Status"
-[DependencyStatusURL]:      https://david-dm.org/coderaiser/restbox "Dependency Status"
-[LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
-
-[CoverageURL]:              https://coveralls.io/github/coderaiser/try-to-tape?branch=master
-[CoverageIMGURL]:           https://coveralls.io/repos/coderaiser/try-to-tape/badge.svg?branch=master&service=github
-

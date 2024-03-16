@@ -8,5 +8,6 @@ dist*
 
 .nyc_output
 *.swp
-.putoutcache
 
+.idea
+coverage
