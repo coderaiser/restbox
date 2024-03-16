@@ -62,7 +62,7 @@
   },
   "homepage": "https://github.com/coderaiser/restbox",
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
   "publishConfig": {
     "access": "public"
