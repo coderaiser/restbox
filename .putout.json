@@ -4,7 +4,8 @@
             "variables/remove-unused": ["on", {
                 "exclude": [
                     "const onError = __",
-                    "const log = __"
+                    "const log = __",
+                    "import {createDebug} from 'obug'"
                 ]
             }]
         }

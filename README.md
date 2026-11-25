@@ -44,10 +44,10 @@
 ## How to use?
 
 ```js
-const http = require('node:http');
-const restbox = require('restbox');
+import http from 'node:http';
+import {restbox} from 'restbox';
 
-const express = require('express');
+import express from 'express';
 
 const app = express();
 const server = http.createServer(app);

@@ -1,7 +1,7 @@
 {
   "name": "restbox",
   "version": "4.0.1",
-  "type": "commonjs",
+  "type": "module",
   "description": "REST for CRUD file operations on dropbox",
   "main": "lib/restbox.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "apart": "^2.0.1",
     "currify": "^4.0.0",
     "debug": "^4.1.0",
+    "obug": "^3.0.0",
     "pipe-io": "^4.0.0",
     "ponse": "^8.0.2",
     "pullout": "^5.0.1",
@@ -61,7 +62,7 @@
   },
   "homepage": "https://github.com/coderaiser/restbox",
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "publishConfig": {
     "access": "public"
