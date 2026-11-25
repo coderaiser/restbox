@@ -1,6 +1,6 @@
 {
   "name": "restbox",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "type": "module",
   "description": "REST for CRUD file operations on dropbox",
   "main": "lib/restbox.js",

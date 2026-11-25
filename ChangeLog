@@ -1,3 +1,22 @@
+2026.11.25, v5.0.0
+
+feature:
+- e9ee368 restbox: migrate to ESM
+- a6ebd5e restbox: readbox v4.0.0
+- 063990b restbox: superc8 v12.7.0
+- 7d0a9fc restbox: try-to-catch v4.1.0
+- 5937aba restbox: through2 v5.0.13
+- 0bbfb35 restbox: supertape v13.6.2
+- 503d83f restbox: serve-once v4.0.1
+- 58309e2 restbox: putout v42.26.3
+- e3bb70b restbox: ponse v8.0.2
+- cf33a5f restbox: node-fetch v3.3.2
+- 8b2aa40 restbox: madrun v13.0.4
+- f6a59c8 restbox: fullstore v4.0.3
+- 0ad44c9 restbox: eslint-plugin-putout v31.5.0
+- 577facd restbox: eslint-plugin-n v18.6.0
+- 3e4f102 restbox: eslint v10.15.0
+
 2024.03.16, v4.0.1
 
 feature:
