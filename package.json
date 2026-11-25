@@ -24,7 +24,7 @@
     "pullout": "^5.0.1",
     "readbox": "^3.0.0",
     "router": "^2.0.0-alpha.1",
-    "try-to-catch": "^3.0.0",
+    "try-to-catch": "^4.1.0",
     "wraptile": "^3.0.0"
   },
   "devDependencies": {
