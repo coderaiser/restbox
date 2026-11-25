@@ -23,29 +23,30 @@
 
 ## REST
 
-|Name         |Method   |Query          |Body               |Description                    |
-|:------------|:--------|:--------------|:------------------|:------------------------------|
-|`fs`         |`GET`    |               |                   |get file or dir content        |
-|             |         |`sort`         |                   |sort dir content by `name`,    |
-|             |         |               |                   |`size`, or `time`              |
-|             |         |`order`        |                   |order of sorting, can be:      |
-|             |         |               |                   |`asc` or `desc`                |
-|             |         |`raw`          |                   |get file or raw dir content    |
-|             |         |`size`         |                   |get file or dir size           |
-|             |         |`time`         |                   |get time of file change        |
-|             |         |`hash`         |                   |get file hash                  |
-|             |`PUT`    |               |file content       |create/write file              |
-|             |         | `unzip`       |file content       |unzip and create/write file    |
-|             |         | `dir`         |                   |create dir                     |
-|             |`PATCH`  |               |diff               |patch file                     |
-|             |`DELETE` |               |                   |delete file                    |
-|             |         |`files`        |Array of names     |delete files                   |
+| Name | Method   | Query   | Body           | Description                 |
+|:------|:----------|:---------|:----------------|:-----------------------------|
+| `fs` | `GET`    |         |                | get file or dir content     |
+|      |          | `sort`  |                | sort dir content by `name`, |
+|      |          |         |                | `size`, or `time`           |
+|      |          | `order` |                | order of sorting, can be:   |
+|      |          |         |                | `asc` or `desc`             |
+|      |          | `raw`   |                | get file or raw dir content |
+|      |          | `size`  |                | get file or dir size        |
+|      |          | `time`  |                | get time of file change     |
+|      |          | `hash`  |                | get file hash               |
+|      | `PUT`    |         | file content   | create/write file           |
+|      |          | `unzip` | file content   | unzip and create/write file |
+|      |          | `dir`   |                | create dir                  |
+|      | `PATCH`  |         | diff           | patch file                  |
+|      | `DELETE` |         |                | delete file                 |
+|      |          | `files` | Array of names | delete files                |
 
 ## How to use?
 
 ```js
+const http = require('node:http');
 const restbox = require('restbox');
-const http = require('http');
+
 const express = require('express');
 
 const app = express();

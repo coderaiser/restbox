@@ -1,4 +1,5 @@
 [files]
-extend-exclude= ["ChangeLog"]
-[default.extend-words]
-reate= "reate"
+extend-exclude = ["ChangeLog"]
+
+[default]
+extend-words = {reate = "reate"}

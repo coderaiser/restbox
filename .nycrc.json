@@ -1,11 +1,12 @@
 {
-    "check-coverage": true,
+    "checkCoverage": true,
     "all": true,
     "exclude": [
         "**/*.spec.js",
+        "**/*.config.*",
         "**/fixture",
-        "test",
-        ".*.{js,mjs}"
+        ".*.{js,mjs}",
+        "test"
     ],
     "branches": 100,
     "lines": 100,

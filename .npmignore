@@ -1,11 +1,11 @@
+*.spec.js
+*.config.*
+*.log
+*.lock
+
 .*
 
-*.spec.js
 webpack.config.js
-yarn-error.log
-
-
 madrun.js
 
 coverage
-*.config.*
