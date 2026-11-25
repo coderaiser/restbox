@@ -46,7 +46,6 @@
 ```js
 import http from 'node:http';
 import {restbox} from 'restbox';
-
 import express from 'express';
 
 const app = express();
