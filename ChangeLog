@@ -1,3 +1,8 @@
+2026.11.25, v5.0.1
+
+fix:
+- 53fb765 restbox: rm useless debug
+
 2026.11.25, v5.0.0
 
 feature:
