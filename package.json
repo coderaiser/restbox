@@ -41,7 +41,7 @@
     "request": "^2.79.0",
     "serve-once": "^4.0.1",
     "string-to-stream": "^3.0.1",
-    "supertape": "^10.4.0",
+    "supertape": "^13.6.2",
     "through2": "^4.0.2"
   },
   "repository": {
