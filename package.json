@@ -30,7 +30,6 @@
   "devDependencies": {
     "@iocmd/wait": "^2.1.0",
     "eslint": "^10.15.0",
-    "eslint-plugin-n": "^18.6.0",
     "eslint-plugin-putout": "^31.5.0",
     "fullstore": "^4.0.3",
     "madrun": "^13.0.4",
@@ -41,6 +40,7 @@
     "request": "^2.79.0",
     "serve-once": "^4.0.1",
     "string-to-stream": "^3.0.1",
+    "superc8": "^12.7.0",
     "supertape": "^13.6.2",
     "through2": "^5.0.13"
   },
