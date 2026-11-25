@@ -35,7 +35,7 @@
     "fullstore": "^4.0.3",
     "madrun": "^13.0.4",
     "mock-require": "^3.0.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.3.2",
     "nodemon": "^3.1.0",
     "putout": "^35.7.5",
     "request": "^2.79.0",
