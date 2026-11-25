@@ -42,7 +42,7 @@
     "serve-once": "^4.0.1",
     "string-to-stream": "^3.0.1",
     "supertape": "^13.6.2",
-    "through2": "^4.0.2"
+    "through2": "^5.0.13"
   },
   "repository": {
     "type": "git",
