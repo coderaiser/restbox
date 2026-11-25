@@ -20,7 +20,6 @@
     "@cloudcmd/dropbox": "^5.0.1",
     "apart": "^2.0.1",
     "currify": "^4.0.0",
-    "debug": "^4.1.0",
     "obug": "^3.0.0",
     "pipe-io": "^4.0.0",
     "ponse": "^8.0.2",
